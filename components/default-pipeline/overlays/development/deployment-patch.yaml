@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: default-pipeline
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/vigneshsri-tenant/devfile-sample-go-basic/default-pipeline@sha256:3f691b87837218f2d78686685fefa62d7a5b50747a513e388636d745687ed56e
+        name: my-go
+        resources: {}
+status: {}
