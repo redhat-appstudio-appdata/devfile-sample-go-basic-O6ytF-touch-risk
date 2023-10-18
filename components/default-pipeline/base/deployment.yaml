@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: default-pipeline
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/redhat-user-workloads/vigneshsri-tenant/devfile-sample-go-basic/default-pipeline@sha256:3f691b87837218f2d78686685fefa62d7a5b50747a513e388636d745687ed56e
         name: my-go
         ports:
         - containerPort: 8081
